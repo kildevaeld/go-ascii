@@ -34,6 +34,10 @@ func CursorTo(x, y int) string {
 	return fmt.Sprintf("%s%d;%dH", ESC, y+1, x+1)
 }
 
+func CursorToX(x int) string {
+	return fmt.Sprintf("%s%sG", ESC, (x + 1))
+}
+
 func CursorMove(x, y int) string {
 	str := ""
 
