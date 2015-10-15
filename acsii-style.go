@@ -15,6 +15,10 @@ func (s Style) Close() string {
 	return fmt.Sprintf("%s%dm", ESC, s.close)
 }
 
+func (s Style) Color(msg string, args ...interface{}) string {
+	return fmt.Sprintf("%s%s%s", s.Open(), fmt.Sprintf(msg, args...), s.Close())
+}
+
 var (
 	// Modifier
 	Reset        = Style{0, 0}
