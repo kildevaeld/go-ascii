@@ -1,4 +1,4 @@
-package acsii
+package ascii
 
 import (
 	"fmt"
