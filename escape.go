@@ -7,8 +7,6 @@ import (
 
 const ESC = "\u001b["
 
-//const ESC = "\033]"
-
 // Cursor
 const CursorLeft = ESC + "1000D"
 const CursorSavePosition = ESC + "s"
