@@ -44,7 +44,7 @@ func CursorMove(x, y int) string {
 	if x < 0 {
 		str = fmt.Sprintf("%s%dD", ESC, math.Abs(float64(x)))
 	} else {
-		str = fmt.Sprintf("%s%dC", x)
+		str = fmt.Sprintf("%s%dC", ESC, x)
 	}
 
 	if y < 0 {
