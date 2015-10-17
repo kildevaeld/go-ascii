@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	ascii "github.com/kildevaeld/go-acsii"
+	ascii "github.com/kildevaeld/go-ascii"
 )
 
 func main() {
