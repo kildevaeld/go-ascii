@@ -4,8 +4,8 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/pkg/term"
-	"golang.org/x/crypto/ssh/terminal"
+	"github.com/kildevaeld/go-ascii/Godeps/_workspace/src/github.com/pkg/term"
+	"github.com/kildevaeld/go-ascii/Godeps/_workspace/src/golang.org/x/crypto/ssh/terminal"
 )
 
 const (
