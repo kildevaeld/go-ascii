@@ -11,6 +11,10 @@ func (c Cursor) Move(x, y int) Cursor {
 
 }
 
+func (c Cursor) MoveToX(x int) Cursor {
+	return c.writeString((CursorToX(x)))
+}
+
 func (c Cursor) Forward(x int) Cursor {
 	return c.writeString(CursorForward(x))
 }
@@ -33,6 +37,10 @@ func (c Cursor) Hide() Cursor {
 
 func (c Cursor) Show() Cursor {
 	return c.writeString(CursorShow)
+}
+
+func (c Cursor) EraseLines(count int) Cursor {
+	return c.writeString(EraseLines(count))
 }
 
 func (c Cursor) writeString(str string) Cursor {
